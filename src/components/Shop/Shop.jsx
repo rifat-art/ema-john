@@ -11,6 +11,8 @@ const Shop = () => {
     // }, [])
 
 
+    const [cart, setCart]= useState([]);
+
     const [products, setProducts] = useState([]);
 
     useEffect( () =>{
@@ -20,8 +22,11 @@ const Shop = () => {
     }, [])
 
 
-    const cartHandlerBtn = (props)=>{
-        console.log(props)
+    const cartHandlerBtn = (product)=>{
+        // console.log(product)
+
+        const newCart = [...cart, product];
+        setCart(newCart);
     };
 
     return (
@@ -36,7 +41,10 @@ const Shop = () => {
                 }
             </div>
             <div className='cart-container'>
-                <h3> cart  </h3>
+                <h3> Order Summary  </h3>
+                <h4>
+                    Cart items : {cart.length}
+                </h4>
             </div>
         </div>
     );
