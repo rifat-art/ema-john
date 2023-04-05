@@ -1,3 +1,29 @@
-.ema{
-    font-size: 50px;
+.header{
+    height: 80px;
+    background-color: #1C2B35;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ema-logo{
+    margin-left: 100px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-right: 100px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover{
+    color: yellow;
 }
