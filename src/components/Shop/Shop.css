@@ -3,3 +3,13 @@
     grid-template-columns: 4fr 1fr;
     margin: 0px 100px;
 }
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 45px 0px;
+    /* margin: 0px 100px; */
+
+
+
+}
